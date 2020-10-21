@@ -5,7 +5,10 @@ import ProductSwiper from '../swiper/productSwiper.jsx';
 
 const ProductShow = props => {
 
-    const { title, content, banner1, banner2, products} = props;
+    const { title, content, banner1, banner2, products, banner2Index} = props;
+
+    var banner2classNames = (typeof banner2Index === 'undefined')? '': styles.bannerDB;
+    
 
     return (
         <div className={styles.container}>
@@ -13,7 +16,7 @@ const ProductShow = props => {
                 {banner1}
             </div>
             <Content2 title={title} content={content} />
-            <div className={styles.banner2}>
+            <div className={[styles.banner2, banner2classNames].join(' ')}>
                 {banner2}
             </div>
             <ProductSwiper products={products}/>
