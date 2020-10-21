@@ -5,14 +5,15 @@
     @include container;
 }
 
-@include media-min($rwd-pad){
-    .container{
-        max-width: 325px;
-    }
-}
-
 @include media-min($rwd-pc-hd){
+
     .container{
         margin-top: 90px;
     }
+
+    .container_inner{
+        max-width: 335px;
+        @include container-center;
+    }
+
 }
