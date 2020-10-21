@@ -205,5 +205,4 @@ const App = () => (
         </footer>
     </article>
 );
-
 export default App;
