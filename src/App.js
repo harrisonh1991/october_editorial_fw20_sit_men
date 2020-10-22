@@ -16,14 +16,14 @@ const App = () => (
             <Hero 
                 banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893246238549.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/1603189323669754.jpg'}}/>}
                 title={<div>灵感集结<br/>解锁 2020 秋冬潮流趋势</div>}
-                content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。复古、脑洞、理性、文艺，一系列关键词引发幻想，新的惊喜与生活之美等待被发现，快跟上 ITeSHOP 的脚步，做好准备，为你的衣橱提前布局！"
+                content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。机能、复古、张扬、街头，一系列关键词引发幻想，新的惊喜与生活之美等待被发现，快跟上 ITeSHOP 的脚步，做好准备，为你的衣橱提前布局！"
             />
         </header>
         <main className={['"landPg"', styles.container].join(' ')}>
             <ProductShow 
-                banner1={(<Image image={{mobile: "https://itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/1603189324151725.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893229049186.jpg"}}/>)}
+                banner1={(<Image image={{src: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/1603189324151725.jpg"}}/>)}
                 title="机能主义大行其道" 
-                content="这一季依然能嗅到“机能风”的热潮，功能强大且用途广泛的单品引爆需求。无论是尺寸各异的口袋设计，抑或帅酷不羁的工装服，设计师们在发挥创意的同时，也对搭配场景和穿着体验投入了更多关注，达到时髦与实用的双赢。"
+                content="这一季依然能嗅到“机能风”的热潮，功能强大且用途广泛的单品引爆需求。无论是尺寸各异的口袋设计，抑或帅酷不羁的工装服，设计师们在发挥创意的同时，也对搭配场景和穿着体验投入了更多关注，达到时髦与实用的双赢。 "
                 banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893246282255.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893235724017.jpg"}} />)}
                 products={{
                     shopUrl: "https://cn.iteshop.com/s_it/item/",
@@ -65,9 +65,9 @@ const App = () => (
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'FFXJKM70301XFIVX',
-                            name: '饰口袋绒面夹克',
-                            brand: 'FINGERCROXX',
+                            sku: '5CXJKJ7129F0FWHR',
+                            name: '牛仔拼接绒面夹克',
+                            brand: 'FIVE CM',
                         },
                         {
                             sku: '5CXPTV6113W0FGRD',
