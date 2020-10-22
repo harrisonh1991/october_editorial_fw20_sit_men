@@ -12,16 +12,18 @@ import './App.scss';
 
 const App = () => (
     <article className="App">
-        <Hero 
-            banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893246238549.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/1603189323669754.jpg'}}/>}
-            title={<div>灵感集结<br/>解锁 2020 秋冬潮流趋势</div>}
-            content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。复古、脑洞、理性、文艺，一系列关键词引发幻想，新的惊喜与生活之美等待被发现，快跟上 ITeSHOP 的脚步，做好准备，为你的衣橱提前布局！"
-        />
+        <header>
+            <Hero 
+                banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893246238549.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/1603189323669754.jpg'}}/>}
+                title={<div>灵感集结<br/>解锁 2020 秋冬潮流趋势</div>}
+                content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。复古、脑洞、理性、文艺，一系列关键词引发幻想，新的惊喜与生活之美等待被发现，快跟上 ITeSHOP 的脚步，做好准备，为你的衣橱提前布局！"
+            />
+        </header>
         <main className={['"landPg"', styles.container].join(' ')}>
             <ProductShow 
-                banner1={(<Image image={{src: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893241915264.jpg"}}/>)}
-                title="复古格纹大势回潮" 
-                content="格纹是秋冬戒不掉的“瘾”，本季它也依旧是无法忽视的重头戏。颇具年代感的面料或以复古剪裁致敬传统，或以个性配色中和怀旧气息，将乡村感与都市感巧妙结合，既摩登又新潮。"
+                banner1={(<Image image={{mobile: "https://itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/1603189324151725.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893229049186.jpg"}}/>)}
+                title="机能主义大行其道" 
+                content="这一季依然能嗅到“机能风”的热潮，功能强大且用途广泛的单品引爆需求。无论是尺寸各异的口袋设计，抑或帅酷不羁的工装服，设计师们在发挥创意的同时，也对搭配场景和穿着体验投入了更多关注，达到时髦与实用的双赢。"
                 banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893246282255.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893235724017.jpg"}} />)}
                 products={{
                     shopUrl: "https://cn.iteshop.com/s_it/item/",
@@ -52,7 +54,7 @@ const App = () => (
                 }}
             />
             <ProductShow 
-                banner1={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893247062834.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893239527147.jpg"}}/>)}
+                banner1={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893241915264.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893230741429.jpg"}}/>)}
                 title="温暖毛绒风潮盛行" 
                 content="复古风的驱使下，怀旧的毛绒及灯芯绒元素得以“重见光明”，拼接、撞色、立体剪裁等手法弱化了材质本身的年代感，着重突出机能性与街头氛围，确保温暖的同时更张扬时髦态度。"
                 banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893247062834.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893239527147.jpg"}} />)}

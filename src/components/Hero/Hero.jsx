@@ -8,12 +8,10 @@ const Hero = props => {
     const { banner, title, content } = props;
 
     return (
-        <header>
-            <div className={styles.container}>
-                {banner}
-                <Content title={title} content={content}/>
-            </div>
-        </header>
+        <div className={styles.container}>
+            {banner}
+            <Content title={title} content={content}/>
+        </div>
     );
 
 }
