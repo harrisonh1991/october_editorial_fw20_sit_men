@@ -14,7 +14,9 @@ const TextBanner = props => {
             </h1>  
             <Tags tags={tags} />
         </div>
+        
     );
 }
 
 export default TextBanner;
+
